@@ -1,0 +1,511 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2C290412-53B1-4D28-A2E7-341C819E83C9}|..\\ClientApplication\\ClientApplication.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\clientapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C8CA844-7811-4E33-84E1-F7B6EE6A0346}|..\\JobsAPI.Tests\\JobsAPI.Tests.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\jobsapi.tests\\services\\jobtypeservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C290412-53B1-4D28-A2E7-341C819E83C9}|..\\ClientApplication\\ClientApplication.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\clientapplication\\services\\jobclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\jobsapi\\services\\jobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|solutionrelative:services\\jobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\jobsapi\\dtos\\jobrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|solutionrelative:dtos\\jobrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\jobsapi\\models\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|solutionrelative:models\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\jobsapi\\models\\jobtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|solutionrelative:models\\jobtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\jobsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\jobsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C290412-53B1-4D28-A2E7-341C819E83C9}|..\\ClientApplication\\ClientApplication.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\clientapplication\\services\\jobtypeclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C290412-53B1-4D28-A2E7-341C819E83C9}|..\\ClientApplication\\ClientApplication.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\clientapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\jobsapi\\services\\jobtypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|solutionrelative:services\\jobtypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C8CA844-7811-4E33-84E1-F7B6EE6A0346}|..\\JobsAPI.Tests\\JobsAPI.Tests.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\jobsapi.tests\\services\\jobservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\jobsapi\\interfaces\\ijobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|solutionrelative:interfaces\\ijobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\jobsapi\\controllers\\jobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|solutionrelative:controllers\\jobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\jobsapi\\repositories\\interface\\ijobrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|solutionrelative:repositories\\interface\\ijobrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\jobsapi\\repositories\\services\\jobrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|solutionrelative:repositories\\services\\jobrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\jobsapi\\interfaces\\ijobtypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|solutionrelative:interfaces\\ijobtypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\jobsapi\\controllers\\jobtypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|solutionrelative:controllers\\jobtypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C8CA844-7811-4E33-84E1-F7B6EE6A0346}|..\\JobsAPI.Tests\\JobsAPI.Tests.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\jobsapi.tests\\controllers\\jobtypecontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C8CA844-7811-4E33-84E1-F7B6EE6A0346}|..\\JobsAPI.Tests\\JobsAPI.Tests.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\jobsapi.tests\\iservice\\ijobtypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\jobsapi\\dtos\\jobdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|solutionrelative:dtos\\jobdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\jobsapi\\dtos\\jobtypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|solutionrelative:dtos\\jobtypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|c:\\users\\ricardo\\onedrive\\desktop\\pruebas\\jobs\\jobsapi\\data\\jobdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9E45B19-CEE6-49E0-8B74-D78C7105B162}|JobsAPI.csproj|solutionrelative:data\\jobdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ricardo\\Desktop\\pruebas\\Jobs\\ClientApplication\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ricardo\\Desktop\\pruebas\\Jobs\\ClientApplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ricardo\\Desktop\\pruebas\\Jobs\\ClientApplication\\Services\\JobClient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ricardo\\Desktop\\pruebas\\Jobs\\ClientApplication\\Utilities\\Logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ricardo\\Desktop\\pruebas\\Jobs2\\ClientApplication\\Services\\JobClient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ricardo\\Desktop\\pruebas\\Jobs2\\ClientApplication\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ricardo\\Desktop\\pruebas\\Jobs2\\ClientApplication\\Services\\JobTypeClient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JobType.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Models\\JobType.cs",
+              "RelativeDocumentMoniker": "Models\\JobType.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Models\\JobType.cs",
+              "RelativeToolTip": "Models\\JobType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T20:47:42.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Job.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Models\\Job.cs",
+              "RelativeDocumentMoniker": "Models\\Job.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Models\\Job.cs",
+              "RelativeToolTip": "Models\\Job.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T16:07:36.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JobRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\DTOs\\JobRequestDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\JobRequestDTO.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\DTOs\\JobRequestDTO.cs",
+              "RelativeToolTip": "DTOs\\JobRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T18:17:15.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\ClientApplication\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\ClientApplication\\appsettings.json",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\ClientApplication\\appsettings.json",
+              "RelativeToolTip": "..\\ClientApplication\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-08T23:14:42.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JobClient.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\ClientApplication\\Services\\JobClient.cs",
+              "RelativeDocumentMoniker": "..\\ClientApplication\\Services\\JobClient.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\ClientApplication\\Services\\JobClient.cs",
+              "RelativeToolTip": "..\\ClientApplication\\Services\\JobClient.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAYwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T22:31:26.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JobTypeServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI.Tests\\Services\\JobTypeServiceTests.cs",
+              "RelativeDocumentMoniker": "..\\JobsAPI.Tests\\Services\\JobTypeServiceTests.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI.Tests\\Services\\JobTypeServiceTests.cs",
+              "RelativeToolTip": "..\\JobsAPI.Tests\\Services\\JobTypeServiceTests.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAtwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T18:02:28.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-06T17:18:50.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "JobService.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Services\\JobService.cs",
+              "RelativeDocumentMoniker": "Services\\JobService.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Services\\JobService.cs",
+              "RelativeToolTip": "Services\\JobService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAnwBgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T16:06:24.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "JobTypeClient.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\ClientApplication\\Services\\JobTypeClient.cs",
+              "RelativeDocumentMoniker": "..\\ClientApplication\\Services\\JobTypeClient.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\ClientApplication\\Services\\JobTypeClient.cs",
+              "RelativeToolTip": "..\\ClientApplication\\Services\\JobTypeClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T22:31:29.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAIAwwF0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T15:57:55.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "JobTypeService.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Services\\JobTypeService.cs",
+              "RelativeDocumentMoniker": "Services\\JobTypeService.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Services\\JobTypeService.cs",
+              "RelativeToolTip": "Services\\JobTypeService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAtwBkAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T20:58:36.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IJobService.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Interfaces\\IJobService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IJobService.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Interfaces\\IJobService.cs",
+              "RelativeToolTip": "Interfaces\\IJobService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T16:12:43.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "JobsController.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Controllers\\JobsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\JobsController.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Controllers\\JobsController.cs",
+              "RelativeToolTip": "Controllers\\JobsController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAYwCEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T23:03:44.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\ClientApplication\\Program.cs",
+              "RelativeDocumentMoniker": "..\\ClientApplication\\Program.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\ClientApplication\\Program.cs",
+              "RelativeToolTip": "..\\ClientApplication\\Program.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAgwE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T22:30:18.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "JobServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI.Tests\\Services\\JobServiceTests.cs",
+              "RelativeDocumentMoniker": "..\\JobsAPI.Tests\\Services\\JobServiceTests.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI.Tests\\Services\\JobServiceTests.cs",
+              "RelativeToolTip": "..\\JobsAPI.Tests\\Services\\JobServiceTests.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwCMAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T17:47:08.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IJobRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Repositories\\Interface\\IJobRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interface\\IJobRepository.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Repositories\\Interface\\IJobRepository.cs",
+              "RelativeToolTip": "Repositories\\Interface\\IJobRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T17:10:38.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "JobRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Repositories\\Services\\JobRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Services\\JobRepository.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Repositories\\Services\\JobRepository.cs",
+              "RelativeToolTip": "Repositories\\Services\\JobRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T16:59:48.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IJobTypeService.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Interfaces\\IJobTypeService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IJobTypeService.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Interfaces\\IJobTypeService.cs",
+              "RelativeToolTip": "Interfaces\\IJobTypeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T20:57:45.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "JobTypeController.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Controllers\\JobTypeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\JobTypeController.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Controllers\\JobTypeController.cs",
+              "RelativeToolTip": "Controllers\\JobTypeController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAYwEQAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T20:56:04.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "JobTypeControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI.Tests\\Controllers\\JobTypeControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\JobsAPI.Tests\\Controllers\\JobTypeControllerTests.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI.Tests\\Controllers\\JobTypeControllerTests.cs",
+              "RelativeToolTip": "..\\JobsAPI.Tests\\Controllers\\JobTypeControllerTests.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAYwDkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T18:00:12.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IJobTypeService.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI.Tests\\IService\\IJobTypeService.cs",
+              "RelativeDocumentMoniker": "..\\JobsAPI.Tests\\IService\\IJobTypeService.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI.Tests\\IService\\IJobTypeService.cs",
+              "RelativeToolTip": "..\\JobsAPI.Tests\\IService\\IJobTypeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T18:01:33.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "JobDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\DTOs\\JobDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\JobDTO.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\DTOs\\JobDTO.cs",
+              "RelativeToolTip": "DTOs\\JobDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T16:29:15.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "JobTypeDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\DTOs\\JobTypeDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\JobTypeDTO.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\DTOs\\JobTypeDTO.cs",
+              "RelativeToolTip": "DTOs\\JobTypeDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T00:22:11.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "JobClient.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\Desktop\\pruebas\\Jobs2\\ClientApplication\\Services\\JobClient.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Desktop\\pruebas\\Jobs2\\ClientApplication\\Services\\JobClient.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\Desktop\\pruebas\\Jobs2\\ClientApplication\\Services\\JobClient.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Desktop\\pruebas\\Jobs2\\ClientApplication\\Services\\JobClient.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T00:24:24.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\Desktop\\pruebas\\Jobs2\\ClientApplication\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Desktop\\pruebas\\Jobs2\\ClientApplication\\Program.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\Desktop\\pruebas\\Jobs2\\ClientApplication\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Desktop\\pruebas\\Jobs2\\ClientApplication\\Program.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T00:12:23.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "JobTypeClient.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\Desktop\\pruebas\\Jobs2\\ClientApplication\\Services\\JobTypeClient.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Desktop\\pruebas\\Jobs2\\ClientApplication\\Services\\JobTypeClient.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\Desktop\\pruebas\\Jobs2\\ClientApplication\\Services\\JobTypeClient.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Desktop\\pruebas\\Jobs2\\ClientApplication\\Services\\JobTypeClient.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T23:20:11.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "JobDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Data\\JobDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\JobDbContext.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\Data\\JobDbContext.cs",
+              "RelativeToolTip": "Data\\JobDbContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T20:54:02.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\Desktop\\pruebas\\Jobs\\ClientApplication\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Desktop\\pruebas\\Jobs\\ClientApplication\\Program.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\Desktop\\pruebas\\Jobs\\ClientApplication\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Desktop\\pruebas\\Jobs\\ClientApplication\\Program.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T15:53:40.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\Desktop\\pruebas\\Jobs\\ClientApplication\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Desktop\\pruebas\\Jobs\\ClientApplication\\appsettings.json",
+              "ToolTip": "C:\\Users\\Ricardo\\Desktop\\pruebas\\Jobs\\ClientApplication\\appsettings.json",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Desktop\\pruebas\\Jobs\\ClientApplication\\appsettings.json",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-07T16:28:33.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "JobClient.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\Desktop\\pruebas\\Jobs\\ClientApplication\\Services\\JobClient.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Desktop\\pruebas\\Jobs\\ClientApplication\\Services\\JobClient.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\Desktop\\pruebas\\Jobs\\ClientApplication\\Services\\JobClient.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Desktop\\pruebas\\Jobs\\ClientApplication\\Services\\JobClient.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T00:08:47.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": ".NETCoreApp,Version=v6.0.AssemblyAttributes.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs",
+              "RelativeDocumentMoniker": "obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\OneDrive\\Desktop\\pruebas\\Jobs\\JobsAPI\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs",
+              "RelativeToolTip": "obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T15:40:12.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "C:\\Users\\Ricardo\\Desktop\\pruebas\\Jobs\\ClientApplication\\Utilities\\Logger.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Desktop\\pruebas\\Jobs\\ClientApplication\\Utilities\\Logger.cs",
+              "ToolTip": "C:\\Users\\Ricardo\\Desktop\\pruebas\\Jobs\\ClientApplication\\Utilities\\Logger.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Desktop\\pruebas\\Jobs\\ClientApplication\\Utilities\\Logger.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T00:07:33.525Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

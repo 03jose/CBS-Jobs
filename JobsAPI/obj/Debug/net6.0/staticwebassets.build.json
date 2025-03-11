@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "b0t02mSWKMhbaZxQ79Ib087evoIrB7eGyeegqExeVW0=",
+  "Source": "JobsAPI",
+  "BasePath": "_content/JobsAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
