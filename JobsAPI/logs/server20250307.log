@@ -1,0 +1,259 @@
+2025-03-07 17:18:04.203 -06:00 [INF] Entity Framework Core 6.0.36 initialized 'JobDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.0.41-mysql 
+2025-03-07 17:18:51.233 -06:00 [INF] Entity Framework Core 6.0.36 initialized 'JobDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.0.41-mysql 
+2025-03-07 17:18:51.370 -06:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='jobdb' AND TABLE_NAME='__EFMigrationsHistory';
+2025-03-07 17:18:51.385 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='jobdb' AND TABLE_NAME='__EFMigrationsHistory';
+2025-03-07 17:18:51.399 -06:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2025-03-07 17:18:51.410 -06:00 [INF] Applying migration '20250307231804_AddJobTypeTable'.
+2025-03-07 17:18:51.499 -06:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Jobs` DROP COLUMN `JobType`;
+2025-03-07 17:18:51.522 -06:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Jobs` ADD `JobTypeId` int NOT NULL DEFAULT 0;
+2025-03-07 17:18:51.537 -06:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `JobTypes` (
+    `JobTypeId` int NOT NULL AUTO_INCREMENT,
+    `JobTypeName` varchar(100) CHARACTER SET utf8mb4 NOT NULL,
+    `JobDescription` longtext CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK_JobTypes` PRIMARY KEY (`JobTypeId`)
+) CHARACTER SET=utf8mb4;
+2025-03-07 17:18:51.551 -06:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX `IX_Jobs_JobTypeId` ON `Jobs` (`JobTypeId`);
+2025-03-07 17:18:51.585 -06:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Jobs` ADD CONSTRAINT `FK_Jobs_JobTypes_JobTypeId` FOREIGN KEY (`JobTypeId`) REFERENCES `JobTypes` (`JobTypeId`) ON DELETE CASCADE;
+2025-03-07 17:18:51.588 -06:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250307231804_AddJobTypeTable', '6.0.36');
+2025-03-07 18:46:16.285 -06:00 [INF] Starting application...
+2025-03-07 18:46:16.667 -06:00 [INF] Now listening on: https://localhost:7163
+2025-03-07 18:46:16.673 -06:00 [INF] Now listening on: http://localhost:5223
+2025-03-07 18:46:16.873 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-07 18:46:16.875 -06:00 [INF] Hosting environment: Development
+2025-03-07 18:46:16.876 -06:00 [INF] Content root path: C:\Users\Ricardo\Desktop\pruebas\Jobs2\JobsAPI\
+2025-03-07 19:08:28.312 -06:00 [INF] Starting application...
+2025-03-07 19:08:28.664 -06:00 [INF] Now listening on: https://localhost:7163
+2025-03-07 19:08:28.671 -06:00 [INF] Now listening on: http://localhost:5223
+2025-03-07 19:08:28.939 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-07 19:08:28.941 -06:00 [INF] Hosting environment: Development
+2025-03-07 19:08:28.943 -06:00 [INF] Content root path: C:\Users\Ricardo\Desktop\pruebas\Jobs2\JobsAPI\
+2025-03-07 19:12:06.932 -06:00 [INF] Starting application...
+2025-03-07 19:12:07.189 -06:00 [INF] Now listening on: https://localhost:7163
+2025-03-07 19:12:07.194 -06:00 [INF] Now listening on: http://localhost:5223
+2025-03-07 19:12:07.352 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-07 19:12:07.353 -06:00 [INF] Hosting environment: Development
+2025-03-07 19:12:07.354 -06:00 [INF] Content root path: C:\Users\Ricardo\Desktop\pruebas\Jobs2\JobsAPI\
+2025-03-07 19:12:08.188 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - -
+2025-03-07 19:12:08.611 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - - - 200 - text/html;charset=utf-8 429.4091ms
+2025-03-07 19:12:08.668 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - -
+2025-03-07 19:12:08.676 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 8.4453ms
+2025-03-07 19:12:08.902 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - -
+2025-03-07 19:12:09.004 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 102.4089ms
+2025-03-07 19:12:09.752 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - -
+2025-03-07 19:12:09.760 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.5221ms
+2025-03-07 19:12:52.437 -06:00 [INF] Request starting HTTP/1.1 POST https://localhost:7163/api/api/jobs/start application/json;+charset=utf-8 32
+2025-03-07 19:12:52.455 -06:00 [INF] Request finished HTTP/1.1 POST https://localhost:7163/api/api/jobs/start application/json;+charset=utf-8 32 - 404 0 - 18.2823ms
+2025-03-07 20:31:56.567 -06:00 [INF] Request starting HTTP/1.1 POST https://localhost:7163/api/api/jobs/start application/json;+charset=utf-8 29
+2025-03-07 20:31:56.569 -06:00 [INF] Request finished HTTP/1.1 POST https://localhost:7163/api/api/jobs/start application/json;+charset=utf-8 29 - 404 0 - 1.9643ms
+2025-03-07 20:36:53.519 -06:00 [INF] Request starting HTTP/1.1 POST https://localhost:7163/api/api/jobtypes application/json;+charset=utf-8 15
+2025-03-07 20:36:53.521 -06:00 [INF] Request finished HTTP/1.1 POST https://localhost:7163/api/api/jobtypes application/json;+charset=utf-8 15 - 404 0 - 1.5934ms
+2025-03-07 21:26:36.321 -06:00 [INF] Starting application...
+2025-03-07 21:26:36.587 -06:00 [INF] Now listening on: https://localhost:7163
+2025-03-07 21:26:36.632 -06:00 [INF] Now listening on: http://localhost:5223
+2025-03-07 21:26:36.811 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-07 21:26:36.812 -06:00 [INF] Hosting environment: Development
+2025-03-07 21:26:36.813 -06:00 [INF] Content root path: C:\Users\Ricardo\Desktop\pruebas\Jobs2\JobsAPI\
+2025-03-07 21:26:37.764 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - -
+2025-03-07 21:26:38.076 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - - - 200 - text/html;charset=utf-8 319.9615ms
+2025-03-07 21:26:38.137 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - -
+2025-03-07 21:26:38.143 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 6.0478ms
+2025-03-07 21:26:38.352 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - -
+2025-03-07 21:26:38.412 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.0829ms
+2025-03-07 21:26:39.088 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - -
+2025-03-07 21:26:39.096 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.9838ms
+2025-03-07 21:26:55.226 -06:00 [INF] Request starting HTTP/1.1 POST https://localhost:7163/api/jobtypes application/json;+charset=utf-8 15
+2025-03-07 21:26:55.258 -06:00 [INF] Request finished HTTP/1.1 POST https://localhost:7163/api/jobtypes application/json;+charset=utf-8 15 - 404 0 - 32.5734ms
+2025-03-07 21:29:01.907 -06:00 [INF] Request starting HTTP/1.1 POST https://localhost:7163/api/jobtypes application/json;+charset=utf-8 15
+2025-03-07 21:29:01.909 -06:00 [INF] Request finished HTTP/1.1 POST https://localhost:7163/api/jobtypes application/json;+charset=utf-8 15 - 404 0 - 2.5315ms
+2025-03-07 21:30:39.160 -06:00 [INF] Request starting HTTP/1.1 GET https://localhost:7163/api/jobtypes application/json 31
+2025-03-07 21:30:39.161 -06:00 [INF] Request finished HTTP/1.1 GET https://localhost:7163/api/jobtypes application/json 31 - 404 0 - 1.3960ms
+2025-03-07 21:30:50.859 -06:00 [INF] Request starting HTTP/1.1 POST https://localhost:7163/api/jobtypes application/json 31
+2025-03-07 21:30:50.861 -06:00 [INF] Request finished HTTP/1.1 POST https://localhost:7163/api/jobtypes application/json 31 - 404 0 - 1.6024ms
+2025-03-07 21:31:09.365 -06:00 [INF] Request starting HTTP/2 POST https://localhost:7163/api/JobType application/json 259
+2025-03-07 21:31:09.376 -06:00 [INF] Executing endpoint 'JobsAPI.Controllers.JobTypeController.CreateJobType (JobsAPI)'
+2025-03-07 21:31:09.468 -06:00 [INF] Route matched with {action = "CreateJobType", controller = "JobType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobsAPI.Models.JobType]] CreateJobType(JobsAPI.Models.JobType) on controller JobsAPI.Controllers.JobTypeController (JobsAPI).
+2025-03-07 21:31:09.486 -06:00 [INF] Executed action JobsAPI.Controllers.JobTypeController.CreateJobType (JobsAPI) in 6.4849ms
+2025-03-07 21:31:09.498 -06:00 [INF] Executed endpoint 'JobsAPI.Controllers.JobTypeController.CreateJobType (JobsAPI)'
+2025-03-07 21:31:09.512 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'JobsAPI.Interfaces.IJobTypeService' while attempting to activate 'JobsAPI.Controllers.JobTypeController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-03-07 21:31:09.623 -06:00 [INF] Request finished HTTP/2 POST https://localhost:7163/api/JobType application/json 259 - 500 - text/plain;+charset=utf-8 258.5933ms
+2025-03-07 21:45:02.631 -06:00 [INF] Starting application...
+2025-03-07 21:45:02.927 -06:00 [INF] Now listening on: https://localhost:7163
+2025-03-07 21:45:02.932 -06:00 [INF] Now listening on: http://localhost:5223
+2025-03-07 21:45:03.093 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-07 21:45:03.094 -06:00 [INF] Hosting environment: Development
+2025-03-07 21:45:03.095 -06:00 [INF] Content root path: C:\Users\Ricardo\Desktop\pruebas\Jobs2\JobsAPI\
+2025-03-07 21:45:03.853 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - -
+2025-03-07 21:45:04.162 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - - - 200 - text/html;charset=utf-8 312.1667ms
+2025-03-07 21:45:04.252 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - -
+2025-03-07 21:45:04.257 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 5.7494ms
+2025-03-07 21:45:04.449 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - -
+2025-03-07 21:45:04.507 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 57.9068ms
+2025-03-07 21:45:05.168 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - -
+2025-03-07 21:45:05.176 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.0264ms
+2025-03-07 21:46:05.279 -06:00 [INF] Starting application...
+2025-03-07 21:46:05.499 -06:00 [INF] Now listening on: https://localhost:7163
+2025-03-07 21:46:05.503 -06:00 [INF] Now listening on: http://localhost:5223
+2025-03-07 21:46:05.655 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-07 21:46:05.657 -06:00 [INF] Hosting environment: Development
+2025-03-07 21:46:05.657 -06:00 [INF] Content root path: C:\Users\Ricardo\Desktop\pruebas\Jobs2\JobsAPI\
+2025-03-07 21:46:06.169 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - -
+2025-03-07 21:46:06.416 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - - - 200 - text/html;charset=utf-8 251.2847ms
+2025-03-07 21:46:06.461 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - -
+2025-03-07 21:46:06.469 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 7.6143ms
+2025-03-07 21:46:06.657 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - -
+2025-03-07 21:46:06.708 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.7215ms
+2025-03-07 21:46:07.243 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - -
+2025-03-07 21:46:07.250 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 6.5690ms
+2025-03-07 21:46:18.227 -06:00 [INF] Request starting HTTP/1.1 POST https://localhost:7163/api/jobtypes application/json 31
+2025-03-07 21:46:18.241 -06:00 [INF] Request finished HTTP/1.1 POST https://localhost:7163/api/jobtypes application/json 31 - 404 0 - 14.0434ms
+2025-03-07 21:46:44.694 -06:00 [INF] Request starting HTTP/1.1 POST https://localhost:7163/api/JobTypes application/json 31
+2025-03-07 21:46:44.696 -06:00 [INF] Request finished HTTP/1.1 POST https://localhost:7163/api/JobTypes application/json 31 - 404 0 - 1.4971ms
+2025-03-07 21:46:56.886 -06:00 [INF] Request starting HTTP/2 POST https://localhost:7163/api/JobType application/json 45
+2025-03-07 21:46:56.892 -06:00 [INF] Executing endpoint 'JobsAPI.Controllers.JobTypeController.CreateJobType (JobsAPI)'
+2025-03-07 21:46:56.931 -06:00 [INF] Route matched with {action = "CreateJobType", controller = "JobType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobsAPI.Models.JobType]] CreateJobType(JobsAPI.DTOs.JobTypeDTO) on controller JobsAPI.Controllers.JobTypeController (JobsAPI).
+2025-03-07 21:46:56.941 -06:00 [INF] Executed action JobsAPI.Controllers.JobTypeController.CreateJobType (JobsAPI) in 3.0332ms
+2025-03-07 21:46:56.948 -06:00 [INF] Executed endpoint 'JobsAPI.Controllers.JobTypeController.CreateJobType (JobsAPI)'
+2025-03-07 21:46:56.952 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'JobsAPI.Interfaces.IJobTypeService' while attempting to activate 'JobsAPI.Controllers.JobTypeController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-03-07 21:46:57.008 -06:00 [INF] Request finished HTTP/2 POST https://localhost:7163/api/JobType application/json 45 - 500 - text/plain;+charset=utf-8 121.9039ms
+2025-03-07 21:49:27.710 -06:00 [INF] Starting application...
+2025-03-07 21:49:27.889 -06:00 [INF] Now listening on: https://localhost:7163
+2025-03-07 21:49:27.894 -06:00 [INF] Now listening on: http://localhost:5223
+2025-03-07 21:49:28.017 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-07 21:49:28.018 -06:00 [INF] Hosting environment: Development
+2025-03-07 21:49:28.019 -06:00 [INF] Content root path: C:\Users\Ricardo\Desktop\pruebas\Jobs2\JobsAPI\
+2025-03-07 21:49:28.636 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - -
+2025-03-07 21:49:28.860 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - - - 200 - text/html;charset=utf-8 227.6926ms
+2025-03-07 21:49:28.907 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - -
+2025-03-07 21:49:28.912 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 5.3153ms
+2025-03-07 21:49:29.076 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - -
+2025-03-07 21:49:29.130 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 53.8565ms
+2025-03-07 21:49:29.652 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - -
+2025-03-07 21:49:29.658 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 6.8477ms
+2025-03-07 21:49:41.056 -06:00 [INF] Request starting HTTP/1.1 POST https://localhost:7163/api/JobTypes application/json 31
+2025-03-07 21:49:41.067 -06:00 [INF] Request finished HTTP/1.1 POST https://localhost:7163/api/JobTypes application/json 31 - 404 0 - 11.0427ms
+2025-03-07 21:49:58.665 -06:00 [INF] Request starting HTTP/2 POST https://localhost:7163/api/JobType application/json 45
+2025-03-07 21:49:58.670 -06:00 [INF] Executing endpoint 'JobsAPI.Controllers.JobTypeController.CreateJobType (JobsAPI)'
+2025-03-07 21:49:58.707 -06:00 [INF] Route matched with {action = "CreateJobType", controller = "JobType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobsAPI.Models.JobType]] CreateJobType(JobsAPI.DTOs.JobTypeDTO) on controller JobsAPI.Controllers.JobTypeController (JobsAPI).
+2025-03-07 21:50:13.986 -06:00 [INF] Entity Framework Core 6.0.36 initialized 'JobDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.0.41-mysql 
+2025-03-07 21:50:14.474 -06:00 [INF] Executed DbCommand (52ms) [Parameters=[@__jobType_JobTypeName_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `JobTypes` AS `j`
+    WHERE `j`.`JobTypeName` = @__jobType_JobTypeName_0)
+2025-03-07 21:50:16.477 -06:00 [INF] Executed action JobsAPI.Controllers.JobTypeController.CreateJobType (JobsAPI) in 17764.3625ms
+2025-03-07 21:50:16.480 -06:00 [INF] Executed endpoint 'JobsAPI.Controllers.JobTypeController.CreateJobType (JobsAPI)'
+2025-03-07 21:50:16.488 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+JobTypeDTO -> JobType
+JobsAPI.DTOs.JobTypeDTO -> JobsAPI.Models.JobType
+   at lambda_method14(Closure , Object , JobType , ResolutionContext )
+   at JobsAPI.Services.JobTypeService.CreateJobTypeAsync(JobTypeDTO jobType) in C:\Users\Ricardo\Desktop\pruebas\Jobs2\JobsAPI\Services\JobTypeService.cs:line 44
+   at JobsAPI.Controllers.JobTypeController.CreateJobType(JobTypeDTO jobType) in C:\Users\Ricardo\Desktop\pruebas\Jobs2\JobsAPI\Controllers\JobTypeController.cs:line 37
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-03-07 21:50:16.537 -06:00 [INF] Request finished HTTP/2 POST https://localhost:7163/api/JobType application/json 45 - 500 - text/plain;+charset=utf-8 17871.7550ms
+2025-03-07 21:52:20.026 -06:00 [INF] Starting application...
+2025-03-07 21:52:20.223 -06:00 [INF] Now listening on: https://localhost:7163
+2025-03-07 21:52:20.228 -06:00 [INF] Now listening on: http://localhost:5223
+2025-03-07 21:52:20.351 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-07 21:52:20.352 -06:00 [INF] Hosting environment: Development
+2025-03-07 21:52:20.352 -06:00 [INF] Content root path: C:\Users\Ricardo\Desktop\pruebas\Jobs2\JobsAPI\
+2025-03-07 21:52:21.013 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - -
+2025-03-07 21:52:21.261 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - - - 200 - text/html;charset=utf-8 254.3935ms
+2025-03-07 21:52:21.321 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - -
+2025-03-07 21:52:21.325 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 4.5057ms
+2025-03-07 21:52:21.508 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - -
+2025-03-07 21:52:21.558 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 50.4913ms
+2025-03-07 21:52:22.045 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - -
+2025-03-07 21:52:22.051 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.9149ms
+2025-03-07 21:52:34.525 -06:00 [INF] Request starting HTTP/2 POST https://localhost:7163/api/JobType application/json 45
+2025-03-07 21:52:34.536 -06:00 [INF] Executing endpoint 'JobsAPI.Controllers.JobTypeController.CreateJobType (JobsAPI)'
+2025-03-07 21:52:34.571 -06:00 [INF] Route matched with {action = "CreateJobType", controller = "JobType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobsAPI.Models.JobType]] CreateJobType(JobsAPI.DTOs.JobTypeDTO) on controller JobsAPI.Controllers.JobTypeController (JobsAPI).
+2025-03-07 21:52:41.989 -06:00 [INF] Entity Framework Core 6.0.36 initialized 'JobDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.0.41-mysql 
+2025-03-07 21:52:42.460 -06:00 [INF] Executed DbCommand (51ms) [Parameters=[@__jobType_JobTypeName_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `JobTypes` AS `j`
+    WHERE `j`.`JobTypeName` = @__jobType_JobTypeName_0)
+2025-03-07 21:52:47.672 -06:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `JobTypes` (`JobDescription`, `JobTypeName`)
+VALUES (@p0, @p1);
+SELECT `JobTypeId`
+FROM `JobTypes`
+WHERE ROW_COUNT() = 1 AND `JobTypeId` = LAST_INSERT_ID();
+2025-03-07 21:52:51.783 -06:00 [INF] Executing CreatedAtActionResult, writing value of type 'JobsAPI.DTOs.JobTypeDTO'.
+2025-03-07 21:52:51.816 -06:00 [INF] Executed action JobsAPI.Controllers.JobTypeController.CreateJobType (JobsAPI) in 17240.032ms
+2025-03-07 21:52:51.819 -06:00 [INF] Executed endpoint 'JobsAPI.Controllers.JobTypeController.CreateJobType (JobsAPI)'
+2025-03-07 21:52:51.831 -06:00 [INF] Request finished HTTP/2 POST https://localhost:7163/api/JobType application/json 45 - 201 - application/json;+charset=utf-8 17305.1839ms
+2025-03-07 21:53:25.474 -06:00 [INF] Request starting HTTP/2 POST https://localhost:7163/api/JobType application/json 45
+2025-03-07 21:53:25.475 -06:00 [INF] Executing endpoint 'JobsAPI.Controllers.JobTypeController.CreateJobType (JobsAPI)'
+2025-03-07 21:53:25.476 -06:00 [INF] Route matched with {action = "CreateJobType", controller = "JobType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobsAPI.Models.JobType]] CreateJobType(JobsAPI.DTOs.JobTypeDTO) on controller JobsAPI.Controllers.JobTypeController (JobsAPI).
+2025-03-07 21:53:30.484 -06:00 [INF] Entity Framework Core 6.0.36 initialized 'JobDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.3' with options: ServerVersion 8.0.41-mysql 
+2025-03-07 21:53:30.508 -06:00 [INF] Executed DbCommand (13ms) [Parameters=[@__jobType_JobTypeName_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `JobTypes` AS `j`
+    WHERE `j`.`JobTypeName` = @__jobType_JobTypeName_0)
+2025-03-07 21:53:36.343 -06:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-03-07 21:53:36.344 -06:00 [INF] Executed action JobsAPI.Controllers.JobTypeController.CreateJobType (JobsAPI) in 10866.2121ms
+2025-03-07 21:53:36.347 -06:00 [INF] Executed endpoint 'JobsAPI.Controllers.JobTypeController.CreateJobType (JobsAPI)'
+2025-03-07 21:53:36.348 -06:00 [INF] Request finished HTTP/2 POST https://localhost:7163/api/JobType application/json 45 - 400 - text/plain;+charset=utf-8 10874.6312ms
